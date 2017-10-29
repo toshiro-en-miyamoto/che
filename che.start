@@ -1,0 +1,12 @@
+#!/bin/sh
+if [ ! -d data ]
+then
+   echo "Creating ./data directory"
+   mkdir './data'
+fi
+echo "Starting Eclipse Che server"
+docker run -it --rm \
+  --volume=/var/run/docker.sock:/var/run/docker.sock \
+  --volume=`pwd`/data:/data \
+  --env=CHE_HOST=10.249.26.199 \
+  eclipse/che start
