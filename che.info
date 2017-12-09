@@ -4,4 +4,4 @@ docker run -it --rm \
   --volume=/var/run/docker.sock:/var/run/docker.sock \
   --volume=`pwd`/data:/data \
   --env=CHE_HOST=10.249.26.199 \
-  eclipse/che:5.20.1 info
+  eclipse/che:5.21.1 info
