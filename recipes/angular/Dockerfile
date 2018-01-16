@@ -11,6 +11,7 @@ LABEL che:server:4200:ref=ng-serve che:server:4200:protocol=http che:server:3000
 # [command] ng-serve:run
 # cd ${current.project.path}
 # ng serve --host 0.0.0.0
+# OR npm start
 # [preview URL] ${server.4200/tcp}
 # Version as of Jan 15 2018
 # node: 8.9.1
